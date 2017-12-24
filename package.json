@@ -2,7 +2,8 @@
   "name": "guess-terminal",
   "version": "1.0.0",
   "description": "Guess the current terminal emulator",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/"
   ],
