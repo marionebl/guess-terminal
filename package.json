@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Guess the current terminal emulator",
   "main": "index.js",
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
@@ -39,10 +41,8 @@
   "homepage": "https://github.com/marionebl/guess-terminal#readme",
   "devDependencies": {
     "jest": "^22.0.4",
+    "jest-cli": "^22.0.4",
     "ts-jest": "^22.0.0",
     "typescript": "^2.6.2"
-  },
-  "dependencies": {
-    "@types/jest": "^21.1.9"
   }
 }
