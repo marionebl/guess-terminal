@@ -26,6 +26,9 @@
       "node"
     ]
   },
+  "engines": {
+    "node": ">= 6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marionebl/guess-terminal.git"
