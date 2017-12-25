@@ -2,7 +2,7 @@ import { guessTerminal } from ".";
 
 const env = Object.assign({}, process.env);
 
-beforeAll(() => {
+beforeEach(() => {
   process.env = {};
 });
 
@@ -12,6 +12,15 @@ afterAll(() => {
 
 it("exists", () => {
   expect(typeof guessTerminal).toBe("function");
+});
+
+it("returns expected value null for unset env", () => {
+  expect(guessTerminal()).toBe(null);
+});
+
+it("returns expected value null for unknown env", () => {
+  process.env.TERM_PROGRAM = "foobar";
+  expect(guessTerminal()).toBe(null);
 });
 
 it("returns expected value terminal", () => {
